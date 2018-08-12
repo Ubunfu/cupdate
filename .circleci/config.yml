@@ -6,14 +6,14 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello, Ryan!"
-      - run: sleep 25
+      - run: sleep 3
   two:
     docker:
       - image: circleci/ruby:2.4.1-jessie
     steps:
       - checkout
       - run: echo "A more familiar hi, Ryan!"
-      - run: sleep 15
+      - run: sleep 1
 workflows:
   version: 2
   one_and_two:
